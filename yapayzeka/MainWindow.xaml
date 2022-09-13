@@ -1,0 +1,23 @@
+﻿<Window x:Class="yapayzeka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:yapayzeka"
+        mc:Ignorable="d"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        Title="AI Mesajlasma" Height="450" Width="800" Icon="/ai-sun-type.gif" Background="White" FontSize="22">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="Black" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image HorizontalAlignment="Left" gif:ImageBehavior.RepeatBehavior="Forever" gif:ImageBehavior.AnimatedSource="/ai-loader-opt.gif" Height="362" VerticalAlignment="Top" Width="360" Source="/ai-loader-opt.gif" RenderTransformOrigin="0.051,0.602" Margin="61,34,0,0"/>
+
+        <TextBox Name="textbox1" HorizontalAlignment="Left" Margin="467,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="293" Height="193" Background="#FF131313" Foreground="White" BorderBrush="{x:Null}"/>
+        <TextBox Name="textbox2" HorizontalAlignment="Left" Margin="467,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="188" Background="#FF191919" Height="74" BorderBrush="{x:Null}" Foreground="#FF888888"/>
+        <Button Name="button1" Content="Cavab Al" Margin="674,288,40,72" Background="#FF524D4D" BorderBrush="{x:Null}" Click="button1_Click" RenderTransformOrigin="0.466,-0.307" FontSize="15"/>
+    </Grid>
+</Window>
